@@ -72,6 +72,8 @@ let style = StyleSheet.create({
   datepickerButtonsWrapper: {
     display: 'flex',
     flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
   }
 });
 
