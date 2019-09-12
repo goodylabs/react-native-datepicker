@@ -42,9 +42,7 @@ let style = StyleSheet.create({
     overflow: 'hidden'
   },
   btnText: {
-    position: 'absolute',
-    top: 0,
-    height: 42,
+    height: 40,
     paddingHorizontal: 20,
     flexDirection: 'row',
     alignItems: 'center',
@@ -70,6 +68,10 @@ let style = StyleSheet.create({
   },
   disabled: {
     backgroundColor: '#eee'
+  },
+  datepickerButtonsWrapper: {
+    display: 'flex',
+    flexDirection: 'column',
   }
 });
 

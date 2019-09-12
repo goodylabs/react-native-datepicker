@@ -404,7 +404,7 @@ class DatePicker extends Component {
                       />
                     </View>
 
-                    <View style={[Styles.datepickerButtonsWrapper, customStyles.datepickerButtonsWrapper]}>
+                    <View style={[Style.datepickerButtonsWrapper, customStyles.datepickerButtonsWrapper]}>
                       <TouchableComponent
                         underlayColor={'transparent'}
                         onPress={this.onPressConfirm}
