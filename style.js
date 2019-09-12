@@ -73,7 +73,59 @@ let style = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    justifyContent: 'center'
+  },
+  validDatesTitle: {
+    fontSize: 13,
+    color: '#555555',
+    fontFamily: 'DINOT'
+  },
+  validDatesSelectorWrapper: {
+    padding: 20
+  },
+  validDatesSelectorsRow: {
+    display: 'flex',
+    flexDirection: 'row',
+    width: '100%',
+    marginBottom: 40,
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start'
+  },
+  validDateSelector: {
+    width: 120,
+    position: 'relative'
+  },
+  validDateSelectorNext: {
+    left: -1
+  },
+  validDateSelectorLabel: {
+    fontSize: 10,
+    color: '#888888',
+    fontFamily: 'DINOT'
+  },
+  validDateSelectorControlText: {
+    fontSize: 13,
+    fontFamily: 'DINOT'
+  },
+  validDateSelectorControlTextActive: {
+    color: '#ffffff',
+    fontFamily: 'DINOT-Bold'
+  },
+  validDateSelectorControl: {
+    borderWidth: 1,
+    paddingHorizontal: 20,
+    paddingVertical: 5,
+    borderColor: '#dedede',
+    marginTop: 5,
+    display: 'flex',
+    alignItems: 'center',
     justifyContent: 'center',
+    zIndex: 1
+  },
+  validDateSelectorControlActive: {
+    backgroundColor: '#f09189',
+    borderColor: '#af706b',
+    zIndex: 2
   }
 });
 
