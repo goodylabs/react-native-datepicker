@@ -109,26 +109,32 @@ class DatePicker extends Component {
           this.setModalVisible(false);
         } else {
           let proposedDate;
+          const validDates = {};
 
-          if (nextValidDate.isDefault) {
-            proposedDate = nextValidDate.date;
+          if (nextValidDate) {
+            validDates.next = {
+              ...nextValidDate,
+              selected: nextValidDate.isDefault || false
+            };
+
+            if (nextValidDate.isDefault) {
+              proposedDate = nextValidDate.date;
+            }
           }
-          if (prevValidDate.isDefault) {
-            proposedDate = prevValidDate.date;
+          if (prevValidDate) {
+            validDates.prev = {
+              ...prevValidDate,
+              selected: prevValidDate.isDefault || false
+            };
+
+            if (prevValidDate.isDefault) {
+              proposedDate = prevValidDate.date;
+            }
           }
 
           this.setState({
             isValidDate,
-            validDates: {
-              prev: {
-                ...prevValidDate,
-                selected: prevValidDate.isDefault || false
-              },
-              next: {
-                ...nextValidDate,
-                selected: nextValidDate.isDefault || false
-              }
-            },
+            validDates,
             proposedDate
           });
         }
